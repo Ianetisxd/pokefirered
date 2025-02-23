@@ -1,0 +1,4 @@
+mapscripts PalletTown_Oak_Office_MapScripts {
+    msgbox ("testwrap", MSGBOX_NPC)
+    end
+}

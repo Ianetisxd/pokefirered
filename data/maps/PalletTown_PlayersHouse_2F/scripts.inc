@@ -104,3 +104,37 @@ EventScript_PalletTown_PlayersHouse_2F_ShutDownPC::
 	releaseall
 # 53 "data/maps/PalletTown_PlayersHouse_2F/scripts.pory"
 	end
+# 54 "data/maps/PalletTown_PlayersHouse_2F/scripts.pory"
+
+name::
+	lockall
+	special AnimatePcTurnOn
+	playse SE_PC_ON
+	msgbox name_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	goto_if_eq name_2
+	msgbox name_Text_2
+name_1:
+	waitmessage
+	releaseall
+	end
+
+name_2:
+	msgbox name_Text_1
+	goto name_1
+
+
+name_Text_0:
+	.string "{PLAYER} turned on the PC.\p"
+	.string "What's this?\n"
+	.string "A new e-mail?\p"
+	.string "Want to read it?$"
+
+name_Text_1:
+	.string "{COLOR BLUE}I hope you'll excuse the sudden\n"
+    .string "e-mail, but there is something that\l"
+	.string "I would like to enturst you with.\p"
+	.string "Won't you come by collect it?\p"
+	.string "POKéMON researcher OAK$"
+name_Text_2:
+	.string "{PLAYER} turned of the PC$"

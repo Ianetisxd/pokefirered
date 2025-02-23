@@ -163,6 +163,7 @@ PalletTown_EventScript_OakTrigger::
 	delay 30
 	playbgm MUS_OAK, 0
 	message PalletTown_Text_OakDontGoOut
+	setflag FLAG_HIDE_RIVAL_IN_LAB
 	waitmessage
 	delay 85
 	closemessage
@@ -229,6 +230,7 @@ PalletTown_Movement_OakEnterLeft::
 	walk_up
 	walk_up
 	walk_up
+	walk_up
 	walk_left
 	walk_left
 	walk_left
@@ -241,6 +243,7 @@ PalletTown_Movement_OakEnterRight::
 	walk_right
 	walk_right
 	walk_right
+	walk_up
 	walk_up
 	walk_up
 	walk_up

@@ -191,7 +191,7 @@
 #define VAR_MAP_SCENE_MT_MOON_B2F                                              0x408B
 
 
-#define VAR_0x408C                 0x408C
+#define VAR_STARTER_SCENE                 0x408C
 #define VAR_0x408D                 0x408D
 #define VAR_0x408E                 0x408E
 #define VAR_0x408F                 0x408F
@@ -199,7 +199,7 @@
 #define VAR_0x4091                 0x4091
 #define VAR_0x4092                 0x4092
 #define VAR_0x4093                 0x4093
-#define VAR_0x4094                 0x4094
+#define VAR_DAISY                 0x4094
 #define VAR_0x4095                 0x4095
 #define VAR_0x4096                 0x4096
 #define VAR_0x4097                 0x4097
